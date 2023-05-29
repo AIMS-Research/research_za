@@ -1,2 +1,2 @@
-# research_za
-Research at AIMS South Africa
+# Research at AIMS South Africa
+
