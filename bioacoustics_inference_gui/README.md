@@ -14,6 +14,8 @@ Emmanuel Dufourq [1],[2],[3], Lorene Jeantet [1],[2],[3]
 [2]: Stellenbosch University, Department of Applied Mathematics, South Africa  
 [3]: National Institute for Theoretical and Computational Sciences, South Africa  
 
+<img src="https://github.com/AIMS-Research/research_za/assets/15357701/ecf37866-e80b-4d90-9a5b-b60b096c3ffc" width=50%>                                                                        
+
 ## User manual
 
 A user manual is <a href="https://docs.google.com/document/d/1x86dZ3vVTSvxcWJnuc9KpMUELWBVNyMVtk85Imd2pi0/edit?usp=sharing
@@ -33,9 +35,6 @@ A 48 second roar shriek event:
 
 An example of another animal vocalisation:
 <img src="https://drive.google.com/uc?export=view&id=1Q0GuQSPPJKP5TueefvSv_hqDkMscfCK_" width="900">
-
-Roar shriek and rain:
-<img src="https://drive.google.com/uc?export=view&id=1fQybOjJ4_WnlxUwMmCbB4H_qcqOUC9Sj" width="900">
 
 ### Libraries:
 
