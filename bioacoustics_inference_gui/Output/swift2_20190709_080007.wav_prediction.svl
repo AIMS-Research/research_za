@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sonic-visualiser>
+<sv>
+  <data>
+    <model id="1" name="" sampleRate="48000" start="0" end="115212265" type="sparse" dimensions="2" resolution="1" notifyOnAdd="true" dataset="0" subtype="box" minimum="0" maximum="24000.0" units="Hz" />
+    <dataset id="0" dimensions="2">
+      <point frame="7392000" value="400" duration="1056000" extent="1100" label="predicted" />
+      <point frame="8352000" value="400" duration="240000" extent="1100" label="predicted" />
+      <point frame="28656000" value="400" duration="2784000" extent="1100" label="predicted" />
+      <point frame="31392000" value="400" duration="912000" extent="1100" label="predicted" />
+      <point frame="33120000" value="400" duration="912000" extent="1100" label="predicted" />
+      <point frame="43392000" value="400" duration="1104000" extent="1100" label="predicted" />
+      <point frame="44400000" value="400" duration="240000" extent="1100" label="predicted" />
+      <point frame="44736000" value="400" duration="432000" extent="1100" label="predicted" />
+      <point frame="45168000" value="400" duration="432000" extent="1100" label="predicted" />
+      <point frame="45504000" value="400" duration="432000" extent="1100" label="predicted" />
+      <point frame="46416000" value="400" duration="480000" extent="1100" label="predicted" />
+      <point frame="46896000" value="400" duration="528000" extent="1100" label="predicted" />
+      <point frame="47328000" value="400" duration="480000" extent="1100" label="predicted" />
+    </dataset>
+  </data>
+  <display>
+    <layer id="2" type="boxes" name="Boxes" model="1"  verticalScale="0"  colourName="White" colour="#ffffff" darkBackground="true" />
+  </display>
+</sv>
