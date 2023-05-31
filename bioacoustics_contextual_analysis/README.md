@@ -8,6 +8,9 @@ We answer the question: given two bird songs, as shown below, can machine learni
 
 ![Figure1](https://github.com/AIMS-Research/research_za/assets/15357701/ff83d68d-9c7b-462d-9960-67057217873b)
 
+Link to the research article: [to appear soon]
+
+Keywords: bioacoustics, deep learning, passive acoustic monitoring, species identification, birds, Hainan gibbons
 
 # Authors 
 Lorène Jeantet [1,2,3] & Emmanuel Dufourq [1,2,3]
