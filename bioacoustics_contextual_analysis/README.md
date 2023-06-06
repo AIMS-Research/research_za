@@ -30,11 +30,9 @@ The dataset contains songs of 22 bird species from 5 families and genera differe
 
 ![Figure2_exampleannotation](https://github.com/AIMS-Research/research_za/assets/15357701/66a11441-e225-428b-a4b2-ea1ab1d2ebab)
 
-We also used vocalisations from Hainan gibbons in a second case study.
+We also used vocalisations from Hainan gibbons in a second case study. <a href="https://zenodo.org/record/7997739">The testing set is available here.</a> 
 
 ![gibbons_calls](https://github.com/AIMS-Research/research_za/assets/15357701/2fa9e027-ea1e-4d15-ad10-8db341064f9c)
-
-
 
 # Findings
 
