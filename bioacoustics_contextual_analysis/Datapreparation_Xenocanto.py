@@ -13,7 +13,13 @@ Script to process the audio files downloaded from Xenocanto.
 It will generate a training dataset saved in audio format and the spectrograms of the validation dataset.
 The training dataset is saved in audio format to be processed (data-augmentation and balance) in a second step with the script : Data_augmentation_and_balance.py  
 
+The training and validation dataset have to be previously downloaded from Zenodo: https://doi.org/10.5281/zenodo.7828148 
+
 '''
+
+# Set up the  working directory where the data and scripts are contained (can be dowloaded from Github)
+import os
+os.chdir('../BirdClassifier_metadata')
 
 
 from Preprocessing_Xenocanto import *
@@ -22,16 +28,17 @@ import params
 
 # I - Preprocessing of the training dataset
 
-## Paths for the folders containing audio and annotation files
-folder='~/Audio_files/Training_1'
-folder_annotation='~/Annotation/Training_1'
+## Paths to the folders containing audio and annotation files for the tranain dataset
+folder='~/Audio_files/Training'
+folder_annotation='~/Annotation/Training'
 
-##File containing metadata of selected species' recordings from Xenocanto
-database_file='~/Xenocanto_metadata_qualityA_selection.csv'
+
+## File containing metadata of selected species' recordings from Xenocanto
+database_file='Xenocanto_metadata_qualityA_selection.csv'
 
 
 ## Folder where processed data will be saved
-out_dir='~/Out'
+out_dir='out'
 
 
 
@@ -79,10 +86,10 @@ pre_pro.save_data_to_pickle(X_calls, X_meta, Y_calls, Saved_X='X_Xenocanto_audio
 
 # II- Preprocessing of the validation dataset
 
-## Paths for the folders containing audio and annotation files for the validation dataset
-folder='~/Audio_files/Validation_1'
-folder_annotation='~/Annotation/Validation_1'
-out_dir='~/Out'
+## Paths to the folders containing audio and annotation files for the validation dataset
+folder='~/Audio_files/Validation'
+folder_annotation='~/Annotation/Validation'
+out_dir='out'
 
 
 ## Indicate if we want to keep the obtained segment in audio format or image (spectrogram)

@@ -23,20 +23,24 @@ Each window of the training dataset wil be converted in spectrogram and the trai
 
 '''
 
+# Set up the  working directory where the data and scripts are contained
+import os
+os.chdir('../BirdClassifier_metadata')
+
 
 from Augmentation_Xenocanto import *
 
 
 
 ## Path where the training dataset has been saved in pickle
-folder='~/Out/'
+folder='out/'
 ## Path for the folder where to save the balanced training dataset
-out_dir='~/Out/'
+out_dir='out/'
 
 
 
-## Names of the files 
-X_file_name='X_Xenocanto_audio_training-pow.pkl'
+## Names of the files
+X_file_name='X_Xenocanto_audio_training-pow.pkl
 X_meta_file_name='X_meta_Xenocanto_audio_training-pow.pkl'
 Y_file_name='Y_Xenocanto_audio_training-pow.pkl'
 
@@ -44,7 +48,7 @@ Y_file_name='Y_Xenocanto_audio_training-pow.pkl'
 sample_rate = 22050  #sample rate after pre-processing. Audio files have already been downsampled in the previous step
 
 #nb of windows that we want in the balance dataset per species and per country.
-nb_sgts_ended=200
+nb_sgts_ended=150
 
 # Operations that we want to realise
 reduce=True

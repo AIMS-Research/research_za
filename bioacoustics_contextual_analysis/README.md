@@ -1,4 +1,5 @@
-# Empowering Deep Learning Acoustic Classifiers with Human-like Ability to Utilize Contextual Information for Wildlife Monitoring
+# Improving deep learning acoustic classifiers with contextual information
+for wildlife monitoring
 
 ## Purpose of the project
 
@@ -8,7 +9,7 @@ We answer the question: given two bird songs, as shown below, can machine learni
 
 ![Figure1](https://github.com/AIMS-Research/research_za/assets/15357701/ff83d68d-9c7b-462d-9960-67057217873b)
 
-Link to the research article: [to appear soon]
+Link to the research article: https://www.sciencedirect.com/science/article/pii/S1574954123002856
 
 Keywords: bioacoustics, deep learning, passive acoustic monitoring, species identification, birds, Hainan gibbons
 
@@ -43,4 +44,35 @@ We developed a multi-branch convolutional neural network (CNN) that leverages sp
 
 In the second case study, leveraging metadata with the multi-branch CNN resulted in a 63% reduction in false positives (detecting 94% of calls) and a 19% increase in gibbon detection. 
 
+## Libraries
 
+Tested on Python 3.11
+- soundfile==0.12.1
+- librosa==0.10.1
+- numpy==1.23.5
+- yattag==1.15.1
+- pandas==2.0.1
+- scipy==1.10.1
+- scikit-learn==1.2.2
+- matplotlib==3.7.1
+- tensorflow==2.11.0
+
+## Code description 
+
+### Organisation of the folders
+
+The main folder contains the scripts necessary to pre-process the dataset and to train the Baseline model as well as the multi-branch CNN. The scripts to train the Geographical prior can be found in the dedicated folder "Geographical_prior". 
+
+The scripts are written to save the pre-processed data into the "ou"' folder and the trained models, along with their outputs, into the "Models_out" folder. When training a model, a new folder associated with that experiment will be created in "Models_out" with the date of the experiment and the model name as the folder's name.
+
+The "out" folder contains dictionaries used in the article to map between an index number and the name of the species or the country. Functions to open the dictionnaries or generate them can be found in the "Preprocessing_Xenocanto" class ("Preprocessing_Xenocanto.py"). 
+
+For the Greographical prior, the data necessary to train the model can be found in the "Data" folder. Similarly to the main folder, when training the model, a new folder associated with that experiment will be created in 'Models_out' with the date of the experiment and the model name as the folder's name.
+
+### Data pre-processing
+
+### Training of the Baseline Model and Multi-branch CNN 
+
+### Training and Application of the Geographical Prior 
+
+The codes related to the training process of the Geographical prior can be found in the folder Geographical_prior. 
