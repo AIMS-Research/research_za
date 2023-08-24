@@ -1,5 +1,4 @@
-# Improving deep learning acoustic classifiers with contextual information
-for wildlife monitoring
+# Improving deep learning acoustic classifiers with contextual information for wildlife monitoring
 
 # Graphical Abstract 
 ![abstract image](https://github.com/AIMS-Research/research_za/assets/105348746/7581228f-667f-4647-8166-22faaea76d5a)
