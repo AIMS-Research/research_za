@@ -79,7 +79,9 @@ For the Greographical prior, the data necessary to train the model can be found 
 ![Training](https://github.com/AIMS-Research/research_za/assets/105348746/2c698a87-63f7-4ed4-b10e-eb55696bfa44)
 
 ### Training and Application of the Geographical Prior 
+The codes related to the training process of the Geographical prior can be found in the folder Geographical_prior. 
+
 ![train_geo_prior](https://github.com/AIMS-Research/research_za/assets/105348746/afd13062-15dc-4ef1-aa56-985f91a0dc80)
 ![eval_geo_prior](https://github.com/AIMS-Research/research_za/assets/105348746/36e2c3b7-08f3-4d99-8003-1e2f3b841454)
 
-The codes related to the training process of the Geographical prior can be found in the folder Geographical_prior. 
+
