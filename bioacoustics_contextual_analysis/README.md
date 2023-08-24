@@ -1,6 +1,9 @@
 # Improving deep learning acoustic classifiers with contextual information
 for wildlife monitoring
 
+# Graphical Abstract 
+![abstract image](https://github.com/AIMS-Research/research_za/assets/105348746/7581228f-667f-4647-8166-22faaea76d5a)
+
 ## Purpose of the project
 
 Just as a human would use contextual information to identify species calls from acoustic recordings, one unexplored way to improve deep learning classifier in bioacoustics is to provide the algorithm with contextual meta-data, such as time and location. In this study, we exlpored different methods to provide location information to a bird song classifier.
@@ -70,9 +73,14 @@ The "out" folder contains dictionaries used in the article to map between an ind
 For the Greographical prior, the data necessary to train the model can be found in the "Data" folder. Similarly to the main folder, when training the model, a new folder associated with that experiment will be created in 'Models_out' with the date of the experiment and the model name as the folder's name.
 
 ### Data pre-processing
+![preprocessing](https://github.com/AIMS-Research/research_za/assets/105348746/3af49704-ccfc-4524-a8a6-c6719f5650d4)
+![Data_augmentation](https://github.com/AIMS-Research/research_za/assets/105348746/84a5b55a-898f-45e7-b577-24aefcf356fe)
 
 ### Training of the Baseline Model and Multi-branch CNN 
+![Training](https://github.com/AIMS-Research/research_za/assets/105348746/2c698a87-63f7-4ed4-b10e-eb55696bfa44)
 
 ### Training and Application of the Geographical Prior 
+![train_geo_prior](https://github.com/AIMS-Research/research_za/assets/105348746/afd13062-15dc-4ef1-aa56-985f91a0dc80)
+![eval_geo_prior](https://github.com/AIMS-Research/research_za/assets/105348746/36e2c3b7-08f3-4d99-8003-1e2f3b841454)
 
 The codes related to the training process of the Geographical prior can be found in the folder Geographical_prior. 
