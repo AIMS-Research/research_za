@@ -18,6 +18,8 @@ def browse_folder(textbox):
         textbox.insert(tk.INSERT, folder_name)
         textbox.config(state=tk.DISABLED)
 
+    return folder_name
+
 def browse_file(textbox):
     current_dir = os.getcwd()
     file_path = filedialog.askopenfilename(initialdir=current_dir+"/",
@@ -30,8 +32,7 @@ def browse_file(textbox):
         textbox.insert(tk.INSERT, file_path)
         textbox.config(state=tk.DISABLED)
 
-
-
+    return file_path
 
 def start_prediction():
 
@@ -39,12 +40,19 @@ def start_prediction():
     filename_weights = textbox_model.get("1.0", tk.END).strip()
     folder_output_name = textbox_output.get("1.0", tk.END).strip()
 
+
+
     if not folder_audio_name or not filename_weights or not folder_output_name:
         messagebox.showinfo("Error", "Please select the audio folder, model file, and output folder.")
         return
 
-    def prediction_thread():
-        global folder_audio_name, filename_weights, thread, model, folder_output_name
+    def prediction_thread(folder_audio_name, filename_weights, folder_output_name):
+        global model
+
+        print('------')
+        print(folder_audio_name)
+        print(filename_weights)
+        print(folder_output_name)
         # Check for missing required inputs
         #if folder_audio_name == "" or filename_weights == "" or folder_output_name == "":
         #    print ('missing')
@@ -91,7 +99,7 @@ def start_prediction():
         button_start["state"] = "normal"
 
     # Create and start a new thread for prediction
-    thread = threading.Thread(target=prediction_thread)
+    thread = threading.Thread(target=prediction_thread, args=(folder_audio_name, filename_weights, folder_output_name))
     thread.start()
 
 def show_about():
@@ -159,9 +167,9 @@ button_start.grid(row=3, column=0, columnspan=3, pady=20)
 progress_bar = ttk.Progressbar(window, length=400, mode='determinate')
 progress_bar.pack(pady=10)
 
-folder_audio_name = "Audio"
-filename_weights = "Weights/A7-1-712788074.hdf5"
-folder_output_name = "Output"
+folder_audio_name = "Please select the audio folder"
+filename_weights = "Please select the weights"
+folder_output_name = "Please select an output folder"
 textbox_audio.insert(tk.INSERT, folder_audio_name)
 textbox_model.insert(tk.INSERT, filename_weights)
 textbox_output.insert(tk.INSERT, folder_output_name)

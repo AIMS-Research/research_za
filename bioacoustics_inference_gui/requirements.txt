@@ -6,3 +6,4 @@ librosa==0.8.1
 pandas==2.0.0
 matplotlib==3.7.1
 yattag==1.15.1
+tensorflow==2.13.0rc1
