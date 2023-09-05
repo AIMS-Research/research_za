@@ -57,5 +57,5 @@ scipy==1.10.1
 
 matplotlib==3.7.1
 
-tensorflow==2.12.0
+tensorflow==2.13.0rc1
 
