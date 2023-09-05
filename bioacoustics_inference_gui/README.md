@@ -16,6 +16,9 @@ Emmanuel Dufourq [1],[2],[3], Lorene Jeantet [1],[2],[3]
 
 <img src="https://github.com/AIMS-Research/research_za/assets/15357701/ecf37866-e80b-4d90-9a5b-b60b096c3ffc" width=50%>                                                                        
 
+## YouTube demo tutorial
+We provide <a href="https://youtu.be/PAyO8dK7lCk">a video which demonstrates the steps needed to execute the software </a>. This should be accompanied with the user manual below.
+
 ## User manual
 
 A user manual is <a href="https://docs.google.com/document/d/1x86dZ3vVTSvxcWJnuc9KpMUELWBVNyMVtk85Imd2pi0/edit?usp=sharing
