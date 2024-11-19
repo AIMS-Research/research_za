@@ -47,8 +47,9 @@ The green turtle dataset are available within the Dryad Digital Repository: http
 
 The human dataset is the publicly available <a href="https://archive.ics.uci.edu/dataset/240/human+activity+recognition+using+smartphones">Intensive Care Unit (ICU) HAR dataset</a>. We employed an open-access U-net, proposed by <a href="https://ieeexplore.ieee.org/document/8731875"> Zhang et al. (2019)</a> and available on GitHub (https://github.com/zhangzhao156/Human-Activity-Recognition-Codes-Datasets/tree/master).
 
+![transfer_learning_vs2](https://github.com/user-attachments/assets/2f07d58e-595c-4f2d-a687-b1d0de57cf0f)
 
-The functions provided for training the V-net are from the GitHub repository developed by Dr Lorène Jeantet and  Dr Vincent Vigon (https://github.com/jeantetlorene/Vnet_seaturtle_behavior), associated with the article: <a href="https://www.sciencedirect.com/science/article/abs/pii/S0304380021001253"> Fully Convolutional Neural Network: A solution to infer animal behaviours from multi-sensor data.</a> 
+The functions provided for training the V-net are from the GitHub repository developed by Dr Lorène Jeantet and Dr Vincent Vigon (https://github.com/jeantetlorene/Vnet_seaturtle_behavior), associated with the article: <a href="https://www.sciencedirect.com/science/article/abs/pii/S0304380021001253"> Fully Convolutional Neural Network: A solution to infer animal behaviours from multi-sensor data.</a> 
 Please cite this article if you reuse the functions of these notebooks.
 
 
@@ -65,5 +66,5 @@ scikit-learn==1.2.2
 
 Initially, we demonstrated that while behaviors may seem similar between green and hawksbill turtles, a model trained solely on green turtles could not accurately predict hawksbill behavior (Case I, F-score: 41.17), highlighting the necessity for species-specific model training. Conversely, utilizing a pre-trained model significantly improved predictions compared to a model trained from randomly initialized weights by 8% points (Case II, F1-score = 69.11 ; Case III.i , F1-score = 77.12). Additionally, the results suggested decreased variability in F1-scores when employing transfer learning. We achieved high F1-score by fine-tuning only the encoder, the initial layers of the model (Case III.iii , F1-score = 76.55). However, fine-tuning only the decoder resulted in lower performance (Case III.ii, F1-score = 53.21). While transfer learning in image classification often involves fine-tuning only the last layer, the softmax layer, our findings indicate that in our case with a fully convolutional network, fine-tuning only the softmax layer is not effective (Case III.iv, F1-score = 46.90). \
 To assess the importance of the pre-trained model species choice, we tested transfer learning using a model trained on a significantly different species, humans. The results demonstrated 3.8% points increase in the F1-score compared to a model trained from randomly initialized weights (Case II, F1-score = 69.11 ; Case IV , F1-score = 72.87). This highlights that even when the behaviors of the pre-trained model species differ from the studied species, transfer learning enhances predictions with a similar training time.
+![F1_score_article](https://github.com/user-attachments/assets/2964e30d-7d5f-4e9d-96da-4a6049e379b6)
 
-![F1_score_09052024](https://github.com/jeantetlorene/TransferLearning_Vnet_Hawksbill/assets/105348746/256bf37f-bab1-4a8b-8dd5-dc733a7c58ac)
